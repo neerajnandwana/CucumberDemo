@@ -7,10 +7,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class SearchStepDefinitions {
-	private final SearchWorkflow searchWorkFlow;
+	private final demo.googlesearch.SearchWorkflow searchWorkFlow;
 	private final String googleSearchUrl = "http://www.google.com";
 	
-	public SearchStepDefinitions(SearchWorkflow googleWorkFlow) {
+	public SearchStepDefinitions(demo.googlesearch.SearchWorkflow googleWorkFlow) {
 		this.searchWorkFlow = googleWorkFlow;
 	}
 
