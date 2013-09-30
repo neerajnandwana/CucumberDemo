@@ -29,7 +29,6 @@ public class Client {
 
 	public <T> T waitUntil(ExpectedCondition<T> condition, int timeout) {
 		Wait<WebDriver> wait = new WebDriverWait(driver, timeout);
-		wait.until(condition);
-		return condition.apply(driver);
+		return wait.until(condition);
 	}
 }
